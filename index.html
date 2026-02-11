@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TechCrunch - quase certo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .cabecalho {
+            background: black;
+            color: white;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-bottom: 4px solid #ff8c00;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .logo span {
+            color: #ff8c00;
+        }
+        .menu {
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .menu a {
+            color: #ccc;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .banner {
+            background: #e9e9e9;
+            border-left: 8px solid #ff8c00;
+            padding: 20px 25px;
+            margin-bottom: 30px;
+        }
+        .banner h1 {
+            font-size: 32px;
+            margin: 0 0 5px 0;
+            color: #111;
+        }
+        .banner p {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 15px;
+        }
+        .botao {
+            background: black;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .col-esquerda {
+            flex: 2;
+            min-width: 300px;
+        }
+        .col-direita {
+            flex: 1;
+            min-width: 250px;
+        }
+        .noticia {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .noticia h2 {
+            font-size: 22px;
+            margin: 0 0 8px 0;
+        }
+        .noticia h2 a {
+            color: black;
+            text-decoration: none;
+        }
+        .noticia h2 a:hover {
+            color: #ff8c00;
+        }
+        .meta {
+            font-size: 13px;
+            color: #666;
+        }
+        .evento {
+            background: #fff4e5;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #ffd8b0;
+        }
+        .evento h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .badge {
+            background: #ffd8b0;
+            padding: 6px 12px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #663300;
+            margin: 10px 0;
+        }
+        .btn {
+            background: black;
+            color: white;
+            padding: 8px 18px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .pod-item {
+            border-bottom: 1px dashed #aaa;
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+        }
+        .pod-item strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .newsletter {
+            background: black;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .newsletter h4 {
+            font-size: 20px;
+            margin: 0 0 15px 0;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 70%;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .newsletter button {
+            background: #ff8c00;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            font-weight: bold;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .podcasts-section {
+            margin-top: 50px;
+            border-top: 3px solid black;
+            padding-top: 30px;
+        }
+        .pod-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .pod-card {
+            flex: 1;
+            min-width: 250px;
+        }
+        .rodape {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid #ccc;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+        @media (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <div class="logo">Tech<span>Crunch</span></div>
+        <div class="menu">
+            <a href="#">Events</a>
+            <a href="#">Podcasts</a>
+            <a href="#">Video</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>A PRIMEIRA LINHA PERFEITA PARA AIR FRYER.</h1>
+        <p>Agora com novidades</p>
+        <a href="#" class="botao">EXPERIMENTE →</a>
+    </div>
+
+    <div class="row">
+        <div class="col-esquerda">
+            <h3 style="color:#555; border-bottom:1px solid #ccc; padding-bottom:8px;">TOPiCOS</h3>
+            
+            <div class="noticia">
+                <h2><a href="#">teoria da conspiração</a></h2>
+                <div class="meta">by Kirsten Korosec · 3 hours ago</div>
+            </div>
+            
+            <div class="noticia">
+                <h2><a href="#">mercardo da amazon</a></h2>
+                <div class="meta">by Taylor Hatmaker · 5 hours ago</div>
+            </div>
+            
+            <div class="noticia">
+                <h2><a href="#">eventos</a></h2>
+                <div class="meta">EVENTS · Super Early Bird saves $680</div>
+            </div>
+        </div>
+
+        <div class="col-direita">
+            <div class="evento">
+                <h3>StrictlyVC Download</h3>
+                <p style="color:#555;">Connie Loizos & Alex Gove review top VC stories.</p>
+                <span class="badge">🎙️ 54 episódios · Atualizado Fev 3</span>
+                <a href="#" class="btn">Listen now</a>
+            </div>
+            
+            <h4 style="font-size:20px; margin-bottom:15px;">🎧 Podcasts</h4>
+            
+            <div class="pod-item">
+                <strong>Equity</strong>
+                <div style="color:#555;">The business of startups</div>
+                <div class="meta">1061 episódios · Fev 10, 2026</div>
+            </div>
+            
+            <div class="pod-item">
+                <strong>Build Mode</strong>
+                <div style="color:#555;">Survival guide for founders</div>
+                <div class="meta">7 episódios · Jan 8, 2026</div>
+            </div>
+            
+            <div class="newsletter">
+                <h4>Subscribe for the industry's biggest tech news</h4>
+                <div style="display:flex;">
+                    <input type="email" placeholder="seu email">
+                    <button>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="podcasts-section">
+        <h2 style="font-size:28px; margin-bottom:25px;">Podcasts e Eventos</h2>
+        
+        <div class="pod-grid">
+            <div class="pod-card">
+                <h3 style="font-size:24px; margin-bottom:10px;">Build Mode</h3>
+                <p style="color:#333;">Sem açúcar, sem hype. Conversas sinceras e conselhos de fundadores que têm experiência. Apresentado por Isabelle Johannessen.</p>
+                <div class="meta" style="margin-top:12px;">7 episódios · Atualizado 8 Jan 2026</div>
+                <a href="#" style="color:#ff8c00; font-weight:bold; text-decoration:none;">→ Nova quinta-feira</a>
+            </div>
+            
+            <div class="pod-card">
+                <h3 style="font-size:24px; margin-bottom:10px;">Equity</h3>
+                <p style="color:#333;">O podcast principal do TechCrunch. Produzido por Theresa Loconsolo, editado por Kell. Negócios de startups sem enrolação.</p>
+                <div class="meta" style="margin-top:12px;">1061 episódios · Atualizado 10 Fev 2026</div>
+                <a href="#" style="color:#ff8c00; font-weight:bold; text-decoration:none;">→ Ouvir agora</a>
+            </div>
+            
+            <div class="pod-card">
+                <h3 style="font-size:24px; margin-bottom:10px;">StrictlyVC Download</h3>
+                <p style="color:#333;">Connie Loizos e Alex Gove entrevistam as principais personalidades do mundo tech.</p>
+                <div class="meta" style="margin-top:12px;">54 episódios · Atualizado 3 Fev 2026</div>
+                <a href="#" style="color:#ff8c00; font-weight:bold; text-decoration:none;">→ Assinar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>⚠️ Algumas áreas podem se mover se redimensionar a janela.</p>
+        <p>TechCrunch Brasil · A primeira linha perfeita para air fryer.</p>
+        <p>© 2026 Site de iniciante — ainda aprendendo!</p>
+    </div>
+
+</body>
+</html>
+
